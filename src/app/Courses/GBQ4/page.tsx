@@ -1,6 +1,6 @@
 "use client"
 import {  Heading, Text, Center, Link, HStack, Icon, Container } from '@chakra-ui/react'
-import { BsGlobe2 } from 'react-icons/Bs'
+
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
       </Container>
       <Center mt="10px">
       <HStack>
-        <Icon as={BsGlobe2} />
+       
       <Link href='https://www.pythonforbiologists.org/' target={"_blank"}>Textbook Link</Link>
       </HStack>
       </Center>

@@ -1,6 +1,6 @@
 "use client"
 import {  Heading, Text, Center, Link, HStack, Icon, Container } from '@chakra-ui/react'
-import { AiOutlineAmazon } from 'react-icons/Ai'
+
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
      </Container>
      <Center mt="10px">
        <HStack>
-        <Icon as={AiOutlineAmazon} />
+        
        <Link href='https://www.amazon.com/Bioinformatics-Python-Cookbook-applications-computational/dp/1803236426/ref=sr_1_1' target="_blank">Textbook Link</Link>
        </HStack>
        </Center>

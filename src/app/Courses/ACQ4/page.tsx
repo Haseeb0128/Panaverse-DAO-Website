@@ -1,6 +1,6 @@
 "use client"
 import {  Heading, Text, Box, Center, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-import { SiAmazonalexa } from 'react-icons/Si'
+
 
 export default function Home() {
   return (
@@ -31,7 +31,6 @@ export default function Home() {
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Alexa Skill Developement </Text>
             <HStack>
-              <Icon as={SiAmazonalexa} />
               <Link href='https://developer.amazon.com/en-US/alexa' target={"_blank"}>Link</Link>
             </HStack>
           </VStack>
@@ -40,11 +39,11 @@ export default function Home() {
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Alexa with Matter Protocol</Text>
             <HStack>
-              <Icon as={SiAmazonalexa} />
+              
               <Link href='https://developer.amazon.com/en-US/alexa/matter' target={"_blank"}>Link 1</Link>
             </HStack>
             <HStack>
-              <Icon as={SiAmazonalexa} />
+        
               <Link href='https://developer.amazon.com/en-US/blogs/alexa/device-makers/2022/07/alexa-live-2022-ack-sdk-matter.html' target={"_blank"}>Link 2</Link>
             </HStack>
           </VStack>

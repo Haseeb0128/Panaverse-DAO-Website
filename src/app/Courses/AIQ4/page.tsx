@@ -1,8 +1,6 @@
 "use client"
 import {  Heading, Text, Box, Center, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-import { AiOutlineAmazon } from 'react-icons/Ai'
-import { BsGlobe2 } from 'react-icons/Bs'
-import { SiCoursera, SiOpenai } from 'react-icons/Si'
+
 
 export default function Home() {
   return (
@@ -32,7 +30,7 @@ export default function Home() {
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Introduction to Machine Learning, Data Science, and AI</Text>
             <HStack>
-              <Icon as={SiCoursera} />
+              
               <Link href='https://www.coursera.org/learn/ai-for-everyone' target={"_blank"}>AI for Everyone</Link>
             </HStack>
             <Text>AI for Everyone Quiz in Week 3</Text>
@@ -43,11 +41,11 @@ export default function Home() {
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Building Next-Gen Intelligent Apps with OpenAI’s Powerful Models We will cover GPT-4, ChatGPT, etc. and Next.js 13</Text>
             <HStack>
-              <Icon as={SiOpenai} />
+             
               <Link href='https://openai.com/api/' target={"_blank"}>Open AI API</Link>
             </HStack>
             <HStack>
-              <Icon as={BsGlobe2} />
+              
               <Link href='https://towardsdatascience.com/gpt-4-is-coming-soon-heres-what-we-know-about-it-64db058cfd45' target={"_blank"}>GPT-4 Is Coming Soon. Here’s What We Know About It</Link>
             </HStack>
           </VStack>
@@ -56,7 +54,7 @@ export default function Home() {
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Python Crash Course  for TypeScript Developers</Text>
             <HStack>
-              <Icon as={AiOutlineAmazon} />
+              
               <Link href='https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280/ref=sr_1_5' target="_blank">Python Crash Course, 2nd Edition: A Hands-On, Project-Based Introduction to Programming 2nd Edition</Link>
             </HStack>
           </VStack>

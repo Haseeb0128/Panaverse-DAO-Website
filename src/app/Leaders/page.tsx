@@ -1,8 +1,7 @@
 "use client"
 import { Flex, Heading, Box, Image, VStack, Text, HStack, Icon } from '@chakra-ui/react'
 import Link from 'next/link'
-import { AiFillTwitterCircle } from 'react-icons/Ai'
-import { BsFacebook, BsLinkedin } from 'react-icons/Bs'
+
 
 
 export default function Leaders() {
@@ -19,9 +18,9 @@ export default function Leaders() {
           </VStack>
           <Box mt="35px" ml="70px">
           <HStack gap={"17px"}>
-          <Link href={'https://www.facebook.com/ziakhan'} target="_blank"><Icon as={BsFacebook} w="45px" h="45px"></Icon></Link>
-                <Link href={'https://twitter.com/ziakhan'} target="_blank"><Icon as={AiFillTwitterCircle} w="45px" h="45px"></Icon></Link>
-                <Link href={'https://www.linkedin.com/in/ziaukhan/?originalSubdomain=pk'} target="_blank"><Icon as={BsLinkedin} w="40px" h="40px"></Icon></Link>
+          <Link href={'https://www.facebook.com/ziakhan'} target="_blank"><Image src='/images/fb.svg' /></Link>
+                <Link href={'https://twitter.com/ziakhan'} target="_blank"><Image src='/images/tw.svg' /></Link>
+                <Link href={'https://www.linkedin.com/in/ziaukhan/?originalSubdomain=pk'} target="_blank"><Image src='/images/lin.svg' /></Link>
           </HStack>
           </Box>
           </Box>
@@ -32,9 +31,9 @@ export default function Leaders() {
           <Text fontSize={"20px"} fontWeight="600">Chief Technology Officer</Text>
           <Text pl="15px" pr="15px" textAlign={"center"}>Full-stack developer and DevOps Architect with certification in most cutting edge technologies of development and deployment of tools, apps and microservices.</Text>
           <HStack gap={"17px"}>
-          <Link href={'https://www.facebook.com/daniyalnagori1237'} target="_blank"><Icon as={BsFacebook} w="45px" h="45px"></Icon></Link>
-                <Link href={'https://twitter.com/daniyalnagori1'} target="_blank"><Icon as={AiFillTwitterCircle} w="45px" h="45px"></Icon></Link>
-                <Link href={'https://www.linkedin.com/in/daniyalnagori/?originalSubdomain=pk'} target="_blank"><Icon as={BsLinkedin} w="40px" h="40px"></Icon></Link>
+          <Link href={'https://www.facebook.com/daniyalnagori1237'} target="_blank"><Image src='/images/fb.svg' /></Link>
+                <Link href={'https://twitter.com/daniyalnagori1'} target="_blank"><Image src='/images/tw.svg' /></Link>
+                <Link href={'https://www.linkedin.com/in/daniyalnagori/?originalSubdomain=pk'} target="_blank"><Image src='/images/lin.svg' /></Link>
           </HStack>
           </VStack>
           </Box>
@@ -47,9 +46,9 @@ export default function Leaders() {
           </VStack>
           <Box mt="60px" ml="70px">
           <HStack gap={"17px"}>
-          <Link href={'https://www.facebook.com/ziakhan'} target="_blank"><Icon as={BsFacebook} w="45px" h="45px"></Icon></Link>
-                <Link href={'https://twitter.com/ziakhan'} target="_blank"><Icon as={AiFillTwitterCircle} w="45px" h="45px"></Icon></Link>
-                <Link href={'https://www.linkedin.com/in/hira-khan-76523540/?originalSubdomain=pk'} target="_blank"><Icon as={BsLinkedin} w="40px" h="40px"></Icon></Link>
+          <Link href={'https://www.facebook.com/ziakhan'} target="_blank"><Image src='/images/fb.svg' /></Link>
+                <Link href={'https://twitter.com/ziakhan'} target="_blank"><Image src='/images/tw.svg' /></Link>
+                <Link href={'https://www.linkedin.com/in/hira-khan-76523540/?originalSubdomain=pk'} target="_blank"><Image src='/images/lin.svg' /></Link>
           </HStack>
           </Box>
           </Box>

@@ -1,6 +1,6 @@
 "use client"
 import {  Heading, Text, Box, Center, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-import { BsGlobe2 } from 'react-icons/Bs'
+
 
 export default function Home() {
   return (
@@ -28,7 +28,7 @@ export default function Home() {
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">CDK for Terraform</Text>
             <HStack>
-              <Icon as={BsGlobe2} />
+              
               <Link href='https://developer.hashicorp.com/terraform/cdktf' target={"_blank"}>Link</Link>
             </HStack>
           </VStack>

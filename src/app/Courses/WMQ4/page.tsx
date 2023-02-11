@@ -1,9 +1,6 @@
 "use client"
 import { Heading, Text, Box, Center, Flex, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-import { BsGithub, BsGlobe2, BsBook } from 'react-icons/Bs'
-import { AiOutlineAmazon } from 'react-icons/Ai'
-import {SiBinance, SiWikipedia} from 'react-icons/Si'
-import { FaEthereum } from 'react-icons/Fa'
+
 
 export default function Home() {
   return (
@@ -25,11 +22,11 @@ export default function Home() {
       <VStack align={"start"} p="20px">
       <Text fontSize={"18px"} fontWeight="640">Blockchain and Metaverse Theory</Text>
       <HStack>
-      <Icon as={AiOutlineAmazon} />
+      
       <Link href='https://www.amazon.com/Metaverse-How-Will-Revolutionize-Everything/dp/1324092033/ref=tmm_hrd_swatch_0 ' target={"_blank"}>The Metaverse: And How It Will Revolutionize Everything by Matthew Ball</Link>  
       </HStack>
       <HStack>
-      <Icon as={BsGlobe2} />
+      
       <Link href='https://www.packtpub.com/product/mastering-blockchain-fourth-edition/9781803241067' target={"_blank"}>Mastering Blockchain - Fourth Edition by Imran Bashir</Link>  
       </HStack>  
       </VStack>
@@ -38,11 +35,11 @@ export default function Home() {
       <VStack align={"start"} p="20px">
       <Text fontSize={"18px"} fontWeight="640">Smart Contract Development in Solidity</Text>
       <HStack>
-      <Icon as={BsGlobe2} />
+      
       <Link href='https://www.packtpub.com/product/solidity-programming-essentials-second-edition/9781803231181' target={"_blank"}>Solidity Programming Essentials - Second Edition By Ritesh Modi</Link>  
       </HStack>
       <HStack>
-      <Icon as={BsGithub} />
+      
       <Link href='https://github.com/panaverse/defi-dapps-solidity-smart-contracts' target={"_blank"}>Solidity Learning Repo</Link>  
       </HStack>
       </VStack>
@@ -56,7 +53,7 @@ export default function Home() {
                     <VStack align={"start"} p="20px">
                         <Text fontSize={"18px"} fontWeight="640">Dapp Development using Ethers.js and Next.js 13</Text>
                         <HStack>
-                            <Icon as={BsGithub} />
+                            
                             <Link href='https://github.com/panaverse/dapps-nextjs' target={"_blank"}>Dapp Learning Repo</Link>
                         </HStack>
                     </VStack>
@@ -69,44 +66,44 @@ export default function Home() {
                         <Text fontSize={"18px"} fontWeight="640">Blockchain Project: Create a Token and Launch ICO/IEO/IDO</Text>
                         <Text>As you probably know, the ICO ("Initial Coin Offering") industry has been booming, and it's completely reinventing the way new startups kickstart themselves. In fact, have a look at Wikipedia's list of highest crowdfunding projects and you'll notice that blockchain projects absolutely dominate the list.</Text>
                         <HStack>
-                            <Icon as={SiWikipedia} />
+                            
                             <Link href='https://en.wikipedia.org/wiki/List_of_highest-funded_crowdfunding_projects,' target={"_blank"}>List of highest-funded crowdfunding projects</Link>
                         </HStack>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://phemex.com/blogs/what-is-a-dex-ido' target={"_blank"}>Understand the difference between IDO vs. IEO vs. ICO</Link>
                         </HStack>
                         <Text>Also check these links for latest listings:</Text>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://icodrops.com' target={"_blank"}>ICO list at ICO Drops</Link>
                         </HStack>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://topicolist.com/ ' target={"_blank"}>ICO List of Best New Initial Coin Offerings</Link>
                         </HStack>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://cryptototem.com/ico-list/' target={"_blank"}>Top-Rated Crypto Token Sales: List of New ICOs, STOs, IEOs and IDOsTop-Rated Crypto Token Sales: List of New ICOs, STOs, IEOs and IDOs </Link>
                         </HStack>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://www.icolistingonline.com' target={"_blank"}>ICO List Online</Link>
                         </HStack>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://coincodex.com/ieo-list/binance/' target={"_blank"}>Binance IEO List</Link>
                         </HStack>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://www.coinspeaker.com/ieo/platform/binance-launchpad/' target={"_blank"}>Binance Launchpad</Link>
                         </HStack>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://icomarks.com/ieo' target={"_blank"}>IEO List</Link>
                         </HStack>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://polkastarter.com' target={"_blank"}>Polkastarter</Link>
                         </HStack>
                     </VStack>
@@ -117,11 +114,11 @@ export default function Home() {
               <VStack align={"start"} p="20px">
                         <Text fontSize={"18px"} fontWeight="640">Project Part 1: How to Launch a IEO on Binance Launchpad</Text>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://appinventiv.com/blog/how-to-launch-an-ieo/' target={"_blank"}>Read How to Launch an IEO </Link>
                         </HStack>
                         <HStack>
-                            <Icon as={SiBinance} />
+                            
                             <Link href='https://www.binance.com/en/support/faq/94ed108ce89d44ab8602aa3c476dfb04' target={"_blank"}>Your first task of the project is to make a google slides presentation on how to start a IEO on the Binance Launch Pad</Link>
                         </HStack>
                         <Text>Note: Also document the alternatives to Binance Launchpad.</Text>
@@ -131,11 +128,11 @@ export default function Home() {
                     <VStack align={"start"} p="20px">
                         <Text fontSize={"18px"} fontWeight="640">Project Part 2: How to Launch a IDO on Polkastarter</Text>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://cryptorank.io/fundraising-platforms' target={"_blank"}>Review the list of top fundraising platforms</Link>
                         </HStack>
                         <HStack>
-                            <Icon as={BsGlobe2} />
+                            
                             <Link href='https://polkastarter.com/' target={"_blank"}>Your second task of the project is to make a google slides presentation on how to start a IDO on the Polkastarte</Link>
                         </HStack>
                     </VStack>
@@ -163,13 +160,13 @@ export default function Home() {
                     <Text>Transfer the ownership of the Crowd Sale contract (at deploy time) to our frontend address so that we are able to withdraw the ETH.</Text>
                     <Text>You can use the openzeppelin crowd sale contracts, however you will have to update the code to the latest solidity version.</Text>
                     <HStack>
-                        <Icon as={BsGlobe2} />
+                        
                         <Link href='https://docs.openzeppelin.com/contracts/4.x/crowdsales' target="_blank">Crowdsales</Link>
                     </HStack>
                     <Text>Also write extensive tests, for example we will simply send a transaction of 1 ETH from a random account to the contract. After the transaction, we should expect the account to have received Pako, while the contract's balance should have been reduced.</Text>
                     <Text>Note: Before you get started writing the token contract we suggest you review the access control</Text>
                     <HStack>
-                        <Icon as={BsGlobe2} />
+                        
                         <Link href='https://docs.openzeppelin.com/contracts/4.x/access-control' target="_blank">Access Control</Link>
                     </HStack>
                 </VStack>
@@ -196,11 +193,11 @@ export default function Home() {
       <VStack align={"start"} p="20px">
       <Text fontSize={"18px"} fontWeight="640">Project Part 6: Trying it with Multisignature Wallets</Text>
       <HStack>
-      <Icon as={BsBook} />
+      
       <Link href='https://www.coindesk.com/tech/2020/11/10/multisignature-wallets-can-keep-your-coins-safer-if-you-use-them-right/' target={"_blank"}>Read </Link>  
       </HStack>
       <HStack>
-      <Icon as={BsGlobe2} />
+      
       <Link href='https://gnosis-safe.io/' target={"_blank"}>Now use Gnosis Safe with multi-sigs to do what you did in the last part.</Link>
       </HStack>
       </VStack>
@@ -210,7 +207,7 @@ export default function Home() {
       <Text fontSize={"18px"} fontWeight="640">Project Part 7: Sending Tokens using Ethers.js </Text>
       <Text>Write a Typescript program to send Pako Token to some friend's address using Ethers.js.</Text>
       <HStack>
-      <Icon as={FaEthereum} />
+     
       <Link href='https://ethereum.org/en/developers/tutorials/send-token-etherjs/' target={"_blank"}>You may follow this tutorial</Link>
       </HStack>
       </VStack>
@@ -220,23 +217,23 @@ export default function Home() {
       <VStack align={"start"} p="20px">
       <Text fontSize={"18px"} fontWeight="640">Project Part 8 Advance: Create, Deploy, Mint, and Sell an NFT</Text>
       <HStack>
-      <Icon as={FaEthereum} />
+      
       <Link href='https://ethereum.org/en/developers/tutorials/how-to-write-and-deploy-an-nft/' target={"_blank"}>Read this NFT tutorial series </Link>  
       </HStack>
       <HStack>
-      <Icon as={BsGlobe2} />
+     
       <Link href='https://docs.openzeppelin.com/contracts/4.x/erc721' target={"_blank"}>Create a NFT contract using the OpenZepplen ERC721 NFT Standard </Link>
       </HStack>
       <HStack>
-      <Icon as={BsGlobe2} />
+     
       <Link href='https://docs.openzeppelin.com/contracts/4.x/erc721#Presets' target={"_blank"}>You may use the Preset ERC721 contract </Link>
       </HStack>
       <HStack>
-      <Icon as={BsGlobe2} />
+      
       <Link href='https://opensea.io/' target={"_blank"}>Deploy your NFT contract on a testnet, mint it, and view it on the MetaMask wallet and list it on OpenSea Marketplace for sale</Link>
       </HStack>
       <HStack>
-      <Icon as={FaEthereum} />
+      
       <Link href='https://ethereum.org/en/developers/tutorials/how-to-implement-an-erc721-market/' target={"_blank"}>Implement a ERC721 Market</Link>
       </HStack>
       </VStack>

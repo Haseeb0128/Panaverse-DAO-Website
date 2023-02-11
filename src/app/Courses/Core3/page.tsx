@@ -1,6 +1,6 @@
 "use client"
 import { Heading, Text, Box, Center, Flex, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-import { BsGithub } from 'react-icons/Bs'
+
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       <Text fontSize={"18px"} fontWeight="640">Build Full-Stack Next.js 13 Jamstack Templates</Text>
       <Text>You will be assigned to build a template which we will sell on Theme Forest and Panaverse DAO marketplace. The Panaverse DAO will receive 25% share on the sale of the template which will be used to manage the platform. An additional 15% will be spent on marketing the template. 60% of the revenues will be distributed to the developer through the Panaverse DAO in the form of Panaverse tokens.</Text>
       <HStack>
-      <Icon as={BsGithub} />
+      
       <Link href='https://github.com/panaverse/panaverse-template-standard' target={"_blank"}>The Template Standard</Link>  
       </HStack> 
       </VStack>

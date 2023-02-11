@@ -1,9 +1,7 @@
 "use client"
 import {  Heading, Text, Box, Center, Flex, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-import { BsGlobe2 } from 'react-icons/Bs'
-import {TbPresentation} from 'react-icons/Tb'
-import {FaGoogleDrive, FaRust} from 'react-icons/Fa'
-import {GoPrimitiveDot} from 'react-icons/Go'
+
+
 
 export default function Home() {
   return (
@@ -33,7 +31,7 @@ export default function Home() {
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Introduction to the Internet of Things and Embedded Systems (Weeks 1 and 2)</Text>
             <HStack>
-              <Icon as={TbPresentation} />
+              
               <Link href='https://docs.google.com/presentation/d/14OcW4HfS2i1Db1uKOU6SrckFEFjhSLMgfnHYB3XlEZo/edit?usp=shar' target={"_blank"}>Presentation</Link>
             </HStack>
             <Text>What is the Fourth Industrial Revolution?</Text>
@@ -54,7 +52,7 @@ export default function Home() {
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">The C Reference Book: The C programming language Embedded Programming book: Internet of things with ESP8266</Text>
             <HStack>
-              <Icon as={FaGoogleDrive} />
+              
               <Link href='https://drive.google.com/drive/folders/1CZFxLSFoo9rl3le7KRuhUwLEV6h4xLXN?usp=sharing' target={"_blank"}>Download Link</Link>
             </HStack>
           </VStack>
@@ -67,35 +65,35 @@ export default function Home() {
             <Text>C environment Setup for (Windows, Linux, and Mac OS systems)</Text>
             <Text>Chapters 1-2 of  “The C programming language”</Text>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Variable names types</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Data types and sizes</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Constants</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Arithmetic operations</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Logical and relational operators</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Type conversions.</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Bitwise operators</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Conditional expressions</Text>
             </HStack>
             <Text>Programming Assignments will also be given.</Text>
@@ -106,11 +104,11 @@ export default function Home() {
             <Text fontSize={"18px"} fontWeight="640">C Programming Part 2 (Weeks 6 and 7)</Text>
             <Text>Topics 3 and 4  of  “The C programming language”</Text>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Control flow statements (else if, loops, switch, break continue)</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Function and Program structure(Returning and non-returning, scope rules, Recursion)</Text>
             </HStack>
             <Text>Programming Assignments will also be given.</Text>
@@ -128,11 +126,11 @@ export default function Home() {
             <Text>Basic Electronics and Introduction to microcontrollers</Text>
             <Text>Chapter 1 of  “Internet of things with ESP8266”</Text>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Arduino IDE installation and env setup for ESP8266</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Burning your first code on ESP8266</Text>
             </HStack>
             <Text>Programming Assignments will also be given.</Text>
@@ -145,51 +143,51 @@ export default function Home() {
             <Text fontSize={"18px"} fontWeight="640">Introduction to Embedded systems Part 2 (Weeks 9-12)</Text>
             <Text>Chapters 2-5 of  “Internet of things with ESP8266”</Text>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Link href='https://randomnerdtutorials.com/wifimanager-with-esp8266-autoconnect-custom-parameter-and-manage-your-ssid-and-password/' target="_blank">Connecting your hardware to wifi.</Link>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Link href='https://randomnerdtutorials.com/esp8266-nodemcu-digital-inputs-outputs-arduino/#:~:text=ESP8266%20NodeMCU%20Read%20Digital%20Inputs,number' target="_blank">Reading data from GPIOs.</Link>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Controlling LEDs.</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Link href='https://randomnerdtutorials.com/esp32-dht11-dht22-temperature-humidity-sensor-arduino-ide/' target="_blank">Reading data from digital sensors</Link>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Cloud data logging</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Link href='https://tttapa.github.io/ESP8266/Chap16%20-%20Data%20Logging.html' target="_blank">Link 1</Link>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Link href='https://circuitdigest.com/microcontroller-projects/nodemcu-datalogger-to-save-temperature-and-pressure-data-on-thinger-io-cloud-platform' target="_blank">Link 2</Link>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Link href='https://iotdesignpro.com/projects/nodemcu-data-logger-to-upload-data-on-webserver' target="_blank">Link 3</Link>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Link href='https://github.com/adesolasamuel/NodeMCU-DHT-Data-to-Arduino-IoT-Cloud' target="_blank">Displaying data on the cloud.</Link>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Link href='https://www.instructables.com/Control-ESP8266-Over-the-Internet-from-Anywhere/' target="_blank">Controlling controller remotely.</Link>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Controlling a lamp anywhere in the world.</Text>
             </HStack>
             <HStack>
-              <Icon as={GoPrimitiveDot} />
+              
               <Text>Interacting with different web services.</Text>
             </HStack>
           </VStack>
@@ -200,11 +198,11 @@ export default function Home() {
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Embedded Programming using Rust (Extra Weeks in the Course)</Text>
             <HStack>
-              <Icon as={FaRust} />
+              
               <Link href='https://www.rust-lang.org/what/embedded' target="_blank">Embedded devices</Link>
             </HStack>
             <HStack>
-              <Icon as={BsGlobe2} />
+              
               <Link href='https://crates.io/crates/esp8266' target="_blank">esp8266</Link>
             </HStack>
           </VStack>

@@ -1,7 +1,6 @@
 "use client"
 import {  Heading, Text, Box, Center, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-import { AiOutlineAmazon } from 'react-icons/Ai'
-import { BsGlobe2 } from 'react-icons/Bs'
+
 
 export default function Home() {
   return (
@@ -31,7 +30,7 @@ export default function Home() {
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Kubernetes: Up and Running: Dive into the Future of Infrastructure 3rd Edition</Text>
             <HStack>
-              <Icon as={AiOutlineAmazon} />
+              
               <Link href='https://www.amazon.com/Kubernetes-Running-Dive-Future-Infrastructure/dp/109811020X/ref=sr_1_3' target={"_blank"}>Book</Link>
             </HStack>
           </VStack>
@@ -40,7 +39,7 @@ export default function Home() {
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Cloud Development Kit for Kubernetes</Text>
             <HStack>
-              <Icon as={BsGlobe2} />
+              
               <Link href='https://cdk8s.io/' target={"_blank"}>Link</Link>
             </HStack>
           </VStack>
