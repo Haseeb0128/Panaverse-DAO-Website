@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import {Box, Container, Grid, HStack, Image, SimpleGrid, Text, VStack} from '@chakra-ui/react'
+import {Box, Container, Grid, HStack, Image, SimpleGrid, Text} from '@chakra-ui/react'
 import Link from 'next/link'
 
 export default function Footer() {

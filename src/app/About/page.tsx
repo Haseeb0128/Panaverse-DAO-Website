@@ -1,5 +1,5 @@
 "use client"
-import { Box, Flex, Heading, Text, Container, Spacer, Grid, Image } from '@chakra-ui/react'
+import { Box, Flex, Heading, Text, Container, Spacer, Image } from '@chakra-ui/react'
 // import Image from 'next/image'
 
 export default function About() {

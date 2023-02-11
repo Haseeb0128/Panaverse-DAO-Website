@@ -1,6 +1,6 @@
 "use client"
-import { HamburgerIcon, AddIcon, ExternalLinkIcon, RepeatIcon, EditIcon } from '@chakra-ui/icons'
-import { Flex, Button, Spacer, Box, Text, IconButton, Menu, MenuButton, MenuItem, MenuList, Container, SimpleGrid, Stack} from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
+import { Flex, Button, Box, Text, IconButton, Menu, MenuButton, MenuItem, MenuList, Stack} from '@chakra-ui/react'
 import Link from 'next/link'
 import Image from 'next/image'
 

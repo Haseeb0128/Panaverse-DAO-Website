@@ -1,6 +1,5 @@
 "use client"
 import { Box, Flex, Heading, HStack, Text, VStack, Icon, Link, Center, Container } from '@chakra-ui/react'
-// import Link from 'next/link'
 import { BsBook, BsCameraVideo, BsGithub, BsGlobe2, } from 'react-icons/Bs'
 import { AiOutlineAmazon } from 'react-icons/Ai'
 
