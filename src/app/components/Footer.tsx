@@ -45,7 +45,7 @@ export default function Footer() {
                 <Box pt="100px"  pb={{lg:"none", md:"15px", base:"15px"}}>
                     <Grid>
                     <Text mb="5px" textAlign={"center"} fontWeight="500">Powered By</Text>
-                    <Image src='/images/panacloud.png' width={150} height={77} m={{lg:"auto", md:"auto", base:"auto"}} />
+                    <Image src='/images/panacloud.png' alt='panacloudlogo' width={150} height={77} m={{lg:"auto", md:"auto", base:"auto"}} />
                     </Grid>
                 </Box>
             </SimpleGrid>
