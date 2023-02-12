@@ -1,6 +1,6 @@
 "use client"
-import { Box, Flex, Heading, Text, Container, Spacer, Image } from '@chakra-ui/react'
-// import Image from 'next/image'
+import { Box, Flex, Heading, Text, Container, Spacer } from '@chakra-ui/react'
+import Image from 'next/image'
 
 export default function About() {
     return (
@@ -15,8 +15,8 @@ export default function About() {
                 <Text>Dr. Arif Alvi was born in 1949 and completed his early education in Karachi. He did his Bachelor of Dental Surgery (BDS) from De’ Montmorency College of Dentistry, Lahore where he was declared the “Best Graduate” . He completed his Masters of Science in the field of Prosthodontics from University of Michigan (1975) and in Orthodontics from University of Pacific, San Francisco (1982). He was awarded fellowship ‘Diplomatic American Board of Orthodontists (1995)’`</Text>
             </Box>
             <Spacer />
-            <Box bg={"white"} pt={"40px"}>
-              <Image src={"/images/arif.png"} alt="Dr.Arif Alvi" height={347} width={365} m={{lg:"0", md:"auto", base:"auto"}} />
+            <Box bg={"white"} pt={"40px"} m={{lg:"0", md:"auto", base:"auto"}}>
+              <Image src={"/images/arif.png"} alt="Dr.Arif Alvi" height={347} width={365}  />
             </Box>
         </Flex>
         <Container mt="18px" textAlign={{base:"center", md:"left"}} maxW={{lg:"1500px",md:"auto" ,base:"auto"}} px={{lg:"70px", md:"29px",base:"10px"}}>

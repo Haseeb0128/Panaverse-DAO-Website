@@ -1,7 +1,8 @@
 "use client"
 import React from 'react'
-import {Box, Container, Grid, HStack, Image, SimpleGrid, Text} from '@chakra-ui/react'
+import {Box, Container, Grid, HStack, SimpleGrid, Text} from '@chakra-ui/react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -9,7 +10,7 @@ export default function Footer() {
         <Container maxW={1450}>
             <SimpleGrid templateColumns={{base:'repeat(1, 1fr)', md:'repeat(2, 1fr)' ,lg:'repeat(5, 1fr)'}} gap="20px">
                 <Box py="30px" w={{lg:"400px"}}  textAlign={{lg:"left", md:"center",base:"center"}} px={{lg:"20px", md:"none", base:"none"}}>
-                    <Image src='/images/panaverselogo.png' alt='panaverselogo' width={180} height={100} m={{lg:"0", md:"auto", base:"auto"}}></Image>
+                   <Box pl={{lg:"0px", md:"100px", base:"80px"}}><Image src='/images/panaverselogo.png' alt='panaverselogo' width={180} height={100} ></Image></Box>
                     <Text mt="15px">The Future of the Web is Web 3.0, Metaverse, and Edge Computing. Panaverse DAO is a movement to spread these technolgies globally. It is community of Web 3 and Metaverse developers, designers, trainers, startup founders and service providers.</Text>
                 </Box>
                 <Box pt="70px"  textAlign={{lg:"left", md:"center",base:"center"}} px={{lg:"20px", md:"none", base:"none"}}>
@@ -42,10 +43,10 @@ export default function Footer() {
                 </HStack>
                 </Grid>
                 </Box>
-                <Box pt="100px"  pb={{lg:"none", md:"15px", base:"15px"}}>
+                <Box pt={{lg:"10px", base:"60px"}}  pb={{lg:"none", md:"15px", base:"15px"}} m={{lg:"auto", md:"auto", base:"auto"}}>
                     <Grid>
                     <Text mb="5px" textAlign={"center"} fontWeight="500">Powered By</Text>
-                    <Image src='/images/panacloud.png' alt='panacloudlogo' width={150} height={77} m={{lg:"auto", md:"auto", base:"auto"}} />
+                    <Image src='/images/panacloud.png' alt='panacloudlogo' width={150} height={77}  />
                     </Grid>
                 </Box>
             </SimpleGrid>
