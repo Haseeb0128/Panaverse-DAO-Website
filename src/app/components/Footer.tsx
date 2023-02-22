@@ -1,13 +1,13 @@
 "use client"
 import React from 'react'
-import {Box, Container, Grid, HStack, SimpleGrid, Text} from '@chakra-ui/react'
+import {Box, Center, Container, Grid, HStack, SimpleGrid, Text} from '@chakra-ui/react'
 import Link from 'next/link'
 import Image from 'next/image'
 
 export default function Footer() {
   return (
     <Box bg="#7B7A7A">
-        <Container maxW={1450}>
+        <Container maxW="1600px">
             <SimpleGrid templateColumns={{base:'repeat(1, 1fr)', md:'repeat(2, 1fr)' ,lg:'repeat(5, 1fr)'}} gap="20px">
                 <Box py="30px" w={{lg:"400px"}}  textAlign={{lg:"left", md:"center",base:"center"}} px={{lg:"20px", md:"none", base:"none"}}>
                    <Box pl={{lg:"0px", md:"100px", base:"80px"}}><Image src='/images/panaverselogo.png' alt='panaverselogo' width={180} height={100} ></Image></Box>

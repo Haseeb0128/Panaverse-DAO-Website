@@ -1,6 +1,6 @@
 "use client"
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { Flex, Button, Box, Text, IconButton, Menu, MenuButton, MenuItem, MenuList, Stack } from '@chakra-ui/react'
+import { Flex, Button, Box, Text, IconButton, Menu, MenuButton, MenuItem, MenuList, Stack, Container } from '@chakra-ui/react'
 import Link from 'next/link'
  import Image from 'next/image'
 
@@ -25,7 +25,7 @@ export default function Navbar() {
           >Apply</Button></Link>
         </Stack>
 
-        <Box mt="15px" display={{ lg: 'none',md:'none' ,base: 'initial' }} mr={{base:"5px",md:"0px" ,lg:"0px"}}>
+        <Box mt="15px" display={{ lg: 'none',md:'none' ,base: 'initial' }}>
         <Menu>
           <MenuButton float='right'
           as={IconButton}
