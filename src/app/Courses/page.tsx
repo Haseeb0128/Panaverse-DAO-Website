@@ -31,7 +31,7 @@ export default function Courses() {
         <Heading mt="10px" fontSize={"25px"} textAlign={{base:"center", lg:"left"}} px={{lg:"30px", base:"20px"}}>Core Courses (Common in all Specializations)</Heading>
         <Text mt="10px" textAlign={{base:"center", lg:"left"}} px={{lg:"30px", base:"20px"}}>Every participant of the program will start by completing the following three core courses:</Text>
         <Box>
-        <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px", base:"25px"}}>
+        <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px",md:"25px",base:"25px"}}>
           <Link href={'/Courses/Core1'}><Box transition={"transform 0.3s"} _hover={{ transform: "scale(1.1)" }}  bg="#CECCCC" boxShadow={"dark-lg"} w={{lg:"320px", md:"500px",base:"300px"}} h="195px" borderRadius={"12px"} pt="30px">
             <Text textShadow="2px 2px 4px rgba(0, 0, 0, 0.25)" textAlign={"center"} fontSize={"30px"} fontWeight="600">Quarter 1</Text>
             <Text textAlign={"center"} p="10px" fontWeight="600">CS-101: Object-Oriented Programming using TypeScript</Text>
@@ -56,7 +56,7 @@ export default function Courses() {
       <Heading mt="10px" fontSize={"25px"} textAlign={"center"}>Web 3.0 (Blockchain) and Metaverse Specialization</Heading>
       <Text mx={{base:"10px", lg:"70px"}} mt="10px" textAlign="center">This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.</Text>
       <Box>
-          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} gap={{lg:"20px", base:"25px"}} align={"center"}>
+          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} gap={{lg:"20px",md:"25px",base:"25px"}} align={"center"}>
             <Link href={'/Courses/WMQ4'}>
               <Box bg="#CECCCC" transition={"transform 0.3s"} _hover={{ transform: "scale(1.07)" }} boxShadow={"dark-lg"} w={{lg:"500px",md:"500px",base:"300px"}} h="195px" borderRadius={"12px"} pt="15px">
                 <Text textShadow="2px 2px 4px rgba(0, 0, 0, 0.25)" textAlign={"center"} mt="25px" fontSize={"30px"} fontWeight="600">Quarter 4</Text>
@@ -79,7 +79,7 @@ export default function Courses() {
         <Heading fontSize={"25px"} textAlign={"center"}>Artificial Intelligence (AI) and Deep Learning Specialization</Heading>
         <Text textAlign={"center"} mt="10px">The AI and Deep Learning specialization focuses on building and deploying intelligent APIs using OpenAI models and building custom Deep Learning Tensorflow models.</Text>
         <Box>
-          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px", base:"25px"}}>
+          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px",md:"25px",base:"25px"}}>
             <Link href={'/Courses/AIQ4'}>
             <Box bg="#CECCCC" transition={"transform 0.3s"} _hover={{ transform: "scale(1.07)" }} boxShadow={"dark-lg"} w={{lg:"500px",md:"500px",base:"300px"}} h="195px" borderRadius={"12px"} pt="15px">
               <Text textShadow="2px 2px 4px rgba(0, 0, 0, 0.25)" textAlign={"center"} mt="25px" fontSize={"30px"} fontWeight="600">Quarter 4</Text>
@@ -100,7 +100,7 @@ export default function Courses() {
         <Heading mt="10px" fontSize={"25px"} textAlign={"center"}>Cloud-Native Computing Specialization</Heading>
         <Text textAlign={"center"} mt="10px">The Cloud-Native Computing Specialization focuses on Containers, Kubernetes, and CDK for Kubernetes.</Text>
         <Box>
-          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px", base:"25px"}}>
+          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px",md:"25px",base:"25px"}}>
             <Link href={'/Courses/CNCQ4'}>
               <Box boxShadow={"dark-lg"} transition={"transform 0.3s"} _hover={{ transform: "scale(1.07)" }} bg="#CECCCC" w={{lg:"500px",md:"500px",base:"300px"}} h="195px" borderRadius={"12px"} pt="15px">
               <Text textShadow="2px 2px 4px rgba(0, 0, 0, 0.25)" textAlign={"center"} mt="25px" fontSize={"30px"} fontWeight="600">Quarter 4</Text>
@@ -121,7 +121,7 @@ export default function Courses() {
         <Heading mt="10px" fontSize={"25px"} textAlign={"center"}>Ambient Computing and IOT Specialization</Heading>
         <Text textAlign={"center"} mt="10px">The Ambient Computing and IoT Specialization focuses on building Smart Homes, Offices, Factories, and Cities using Voice computing, Matter Protocol, and Embedded Devices.</Text>
         <Box>
-          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px", base:"25px"}}>
+          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px",md:"25px",base:"25px"}}>
             <Link href={'/Courses/ACQ4'}>
               <Box boxShadow={"dark-lg"} transition={"transform 0.3s"} _hover={{ transform: "scale(1.07)" }} bg="#CECCCC" w={{lg:"500px",md:"500px",base:"300px"}} h="195px" borderRadius={"12px"} pt="15px">
               <Text textShadow="2px 2px 4px rgba(0, 0, 0, 0.25)" textAlign={"center"} mt="25px" fontSize={"30px"} fontWeight="600">Quarter 4</Text>
@@ -142,7 +142,7 @@ export default function Courses() {
         <Heading mt="10px" fontSize={"25px"} textAlign={"center"}>Genomics and Bioinformatics Specialization</Heading>
         <Text textAlign={"center"} mt="10px">Genomics is the study of the total genetic makeup of individual organisms, and how this genetic information is structured, functions, and has evolved; bioinformatics encompasses a diverse range of analytical methods and tools applied to genomic data. This Specialization focuses on performing complex bioinformatics analysis using the most essential Python libraries and applications.</Text>
         <Box>
-          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px", base:"25px"}}>
+          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px",md:"25px",base:"25px"}}>
             <Link href={'/Courses/GBQ4'}>
               <Box boxShadow={"dark-lg"} transition={"transform 0.3s"} _hover={{ transform: "scale(1.07)" }} bg="#CECCCC" w={{lg:"500px",md:"500px",base:"300px"}} h="195px" borderRadius={"12px"} pt="15px">
               <Text textShadow="2px 2px 4px rgba(0, 0, 0, 0.25)" textAlign={"center"} mt="25px" fontSize={"30px"} fontWeight="600">Quarter 4</Text>
@@ -163,7 +163,7 @@ export default function Courses() {
         <Heading mt="10px" fontSize={"25px"} textAlign={"center"}>Network Programmability and Automation Specialization</Heading>
         <Text textAlign={"center"} mt="10px">More than ever, network engineers are finding it challenging to complete their duties entirely manually. Network automation is now crucial due to new protocols, technologies, delivery models, and the requirement for enterprises to become more adaptable and agile. This course teaches network engineers how to automate systems with code using a variety of technologies and tools, including Linux, Python, APIs, and Git.</Text>
         <Box>
-          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px", base:"25px"}}>
+          <Flex justify={"space-evenly"} mt="25px" direction={{base:"column", md:"column", lg:"row"}} align="center" gap={{lg:"20px",md:"25px",base:"25px"}}>
             <Link href={'/Courses/NPAQ4'}>
               <Box boxShadow={"dark-lg"} transition={"transform 0.3s"} _hover={{ transform: "scale(1.07)" }} bg="#CECCCC" w={{lg:"500px",md:"500px",base:"300px"}} h="195px" borderRadius={"12px"} pt="15px">
               <Text textShadow="2px 2px 4px rgba(0, 0, 0, 0.25)" textAlign={"center"} mt="25px" fontSize={"30px"} fontWeight="600">Quarter 4</Text>
