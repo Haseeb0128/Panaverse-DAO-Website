@@ -1,11 +1,13 @@
 "use client"
-import { Box, Flex, Heading, HStack, Text, VStack, Icon, Link, Center, Container } from '@chakra-ui/react'
+import { Box, Flex, Heading, HStack, Text, VStack, Link, Center, Container } from '@chakra-ui/react'
+import { RevealWrapper, RevealList } from 'next-reveal'
 
 
 export default function Home() {
   return (
     <>
       <Container maxW={{lg:"1250px", md:"auto"}} px={{lg:"80px",md:"40px",base:"20px"}}>
+      <RevealList interval={60} delay={500} origin="top" reset={true} distance="100px">
       <Heading textAlign={"center"} mt="120px" fontSize={"45px"}>Detailed Course Syllabus</Heading>
       <Heading mt="30px" textAlign={"center"}>Quarter 1 (Core)</Heading>
       <Text mt="20px" fontSize={"20px"} fontWeight="640" textAlign={"center"}>CS-101: Object-Oriented Programming using TypeScript</Text>
@@ -13,11 +15,13 @@ export default function Home() {
       <Text mt="10px" fontSize={"20px"} fontWeight="640" textAlign={"center"}>Course Description:</Text>
       <Text mt="10px" textAlign={"center"}>We will start the program by learning the fundamentals of Object-Oriented programming using JavaScript and TypeScript. We will also understand the latest Web trends i.e. Web 3.0 and Metaverse concepts and try to understand their working from the perspective of the users.</Text>
       <Text mt="20px" textAlign={"center"} fontSize={"20px"} fontWeight="640">Course Outline:</Text>
+      </RevealList>
        </Container>
 
-      <Center>
+      <Center mt="10px">
       <Flex gap={"20px"} direction={{md:"column", base:"column",lg:"row"}} align={{base:"center",lg:"initial"}}>
-      <Box bg="#50E09F" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}}  mt="10px">
+      <RevealWrapper reset={true} origin="left">
+      <Box bg="#CECCCC" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}} h={{lg:"163px", base:"179px", md:"131px"}}>
         <VStack align={"start"} p="20px">
         <Text fontSize={"18px"} fontWeight="640">HTML and CSS (Homework):</Text>
           <HStack>
@@ -30,7 +34,9 @@ export default function Home() {
           </HStack>
         </VStack>
       </Box>
-      <Box bg="#50E09F" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}}  mt="10px">
+      </RevealWrapper>
+      <RevealWrapper reset={true} origin="right" distance='20px'>
+      <Box bg="#CECCCC" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}}>
         <VStack align={"start"} p="20px">
         <Text fontSize={"18px"} fontWeight="640">Web 3.0 and Metaverse Theory:</Text>
         <HStack>
@@ -47,11 +53,13 @@ export default function Home() {
         </HStack>  
         </VStack>
       </Box>
+      </RevealWrapper>
       </Flex>
       </Center>
-    <Center mt="20px">
+    <Center mt="20px" mb="120px">
     <Flex gap="20px" direction={{md:"column", base:"column",lg:"row"}} align={{base:"center",lg:"initial"}}>
-    <Box bg="#50E09F" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}}>
+    <RevealWrapper reset={true} origin="left">
+    <Box bg="#CECCCC" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}}>
         <VStack align={"start"} p="20px">
         <Text fontSize={"18px"} fontWeight="640">Fundamentals of JavaScript:</Text>
         <HStack>
@@ -96,8 +104,10 @@ export default function Home() {
           </HStack>
           </VStack>
       </Box>
+      </RevealWrapper>
         <VStack gap="12px">
-        <Box bg="#50E09F" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}}>
+        <RevealWrapper origin="right" reset={true} distance="15px">
+        <Box bg="#CECCCC" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}}>
         <VStack align={"start"} p="20px">
         <Text ml="10px" fontSize={"18px"} fontWeight="640">Object-Oriented Programming with TypeScript:</Text>
           <HStack>
@@ -120,7 +130,9 @@ export default function Home() {
           <Text pl="30px">TypeScript Professional Proficiency Quiz</Text>
         </VStack>
       </Box>
-      <Box bg="#50E09F" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}} mt="20px">
+      </RevealWrapper>
+      <RevealWrapper origin="right" reset={true} distance="15px">
+      <Box bg="#CECCCC" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}} >
         <VStack align={"start"} p="20px">
         <Text ml="10px" fontSize={"18px"} fontWeight="640">TypeScript for React: </Text>
           <HStack>
@@ -129,7 +141,9 @@ export default function Home() {
           </HStack>
         </VStack>
       </Box>
-      <Box bg="#50E09F" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}} mt="30px">
+      </RevealWrapper>
+      <RevealWrapper origin="right" reset={true} distance="15px">
+      <Box bg="#CECCCC" borderRadius={"12px"} w={{lg:"500px",md:"500px", base:"320px"}}>
         <VStack align={"start"} p="20px">
         <Text ml="10px" fontSize={"18px"} fontWeight="640">Quarter Break Assignments and Quizzes</Text>
         <Text pl="30px">During the Quarter Break, we do the following Assignments: </Text>
@@ -175,7 +189,8 @@ export default function Home() {
           </HStack>
         </VStack>
       </Box>
-        </VStack>
+      </RevealWrapper>
+      </VStack>
     </Flex>
 </Center>
     </>

@@ -1,12 +1,14 @@
 "use client"
 import {  Heading, Text, Box, Center, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-
+import { RevealList, RevealWrapper } from 'next-reveal'
 
 export default function Home() {
   return (
     
       <>
+      
       <Container maxW={{lg:"1250px", md:"auto"}} px={{lg:"80px",md:"40px",base:"20px"}}>
+      <RevealList interval={60} delay={200} origin="top" reset={true} distance="100px">
       <Heading textAlign={"center"} mt="120px" fontSize={"45px"}>
       Ambient Computing and IOT Specialization
       </Heading>
@@ -23,11 +25,13 @@ export default function Home() {
       <Text mt="10px"  textAlign={"center"}>Matter, the next-generation smart home standard, solves many smart home pain points while bringing all our IoT devices together. Some of the biggest tech companies are working together to make Matter a unified protocol for future smart homes. These companies include Apple, Amazon, and Google. This means Apple HomeKit, Amazon Alexa, Samsung SmartThings, Google Nest, and Samsung SmartThings will support the Matter standard by default for all new devices.</Text>
       <Text mt="10px"  textAlign={"center"}>In this course we will learn to build smart homes with Amazon Alexa and Matter protocol.</Text>
       <Text mt="20px" textAlign={"center"} fontSize={"20px"} fontWeight="640">Course Outline:</Text>
+      </RevealList>
       </Container>
 
-      <Center mt="15px">
-        <VStack gap="15px">
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+      <Center mt="10px" mb="120px">
+        <VStack gap="10px">
+        <RevealWrapper origin="left" reset={true}>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Alexa Skill Developement </Text>
             <HStack>
@@ -35,7 +39,9 @@ export default function Home() {
             </HStack>
           </VStack>
         </Box>
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        </RevealWrapper>
+        <RevealWrapper origin="left" reset={true}>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Alexa with Matter Protocol</Text>
             <HStack>
@@ -48,6 +54,7 @@ export default function Home() {
             </HStack>
           </VStack>
         </Box>
+        </RevealWrapper>
         </VStack>
     </Center>
     </>

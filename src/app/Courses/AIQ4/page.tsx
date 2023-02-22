@@ -1,12 +1,13 @@
 "use client"
 import {  Heading, Text, Box, Center, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-
+import { RevealList, RevealWrapper } from 'next-reveal'
 
 export default function Home() {
   return (
     
       <>
       <Container maxW={{lg:"1250px", md:"auto"}} px={{lg:"80px",md:"40px",base:"20px"}}>
+        <RevealList interval={60} delay={200} origin="top" reset={true} distance="100px">
       <Heading textAlign={"center"} mt="120px" fontSize={"45px"}>
         Artificial Intelligence (AI) and Deep Learning Specialization
       </Heading>
@@ -22,11 +23,13 @@ export default function Home() {
       <Text mt="10px"  textAlign={"center"}>We will start this course by understanding the fundamentals and use cases for AI and move on to building next-gen intelligent apps using OpenAI’s powerful models and Next.js 13.</Text>
       <Text mt="10px"  textAlign={"center"}>We'll conclude the course by learning about basic programming concepts using Python, such as lists, dictionaries, classes, functions, and loops, and practice writing clean and readable code with exercises for each topic. We'll also learn how to make your programs interactive and how to test your code safely before adding it to a project. It is a fast-paced, thorough introduction to programming with Python 3.10+ that will have you writing programs, solving problems, and making things that work in no time. In this quarter we will also learn Git, the distributed version control system. We will also review Git-based GitHub services.</Text>
       <Text mt="20px" textAlign={"center"} fontSize={"20px"} fontWeight="640">Course Outline:</Text>
+      </RevealList>
       </Container>
       
-      <Center mt="15px">
-        <VStack gap="15px">
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+      <Center mt="10px" mb="120px">
+        <VStack gap="10px">
+          <RevealWrapper origin='left' reset={true}>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"219px", md:"168px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Introduction to Machine Learning, Data Science, and AI</Text>
             <HStack>
@@ -37,7 +40,9 @@ export default function Home() {
             <Text>Total Questions: 60, Total Time: 75 minutes</Text>
           </VStack>
         </Box>
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        </RevealWrapper>
+        <RevealWrapper origin='left' reset={true}>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"241px", md:"190px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Building Next-Gen Intelligent Apps with OpenAI’s Powerful Models We will cover GPT-4, ChatGPT, etc. and Next.js 13</Text>
             <HStack>
@@ -50,7 +55,9 @@ export default function Home() {
             </HStack>
           </VStack>
         </Box>
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        </RevealWrapper>
+        <RevealWrapper origin='left' reset={true}>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"179px", md:"128px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Python Crash Course  for TypeScript Developers</Text>
             <HStack>
@@ -59,6 +66,7 @@ export default function Home() {
             </HStack>
           </VStack>
         </Box>
+        </RevealWrapper>
         </VStack>
     </Center>
     </>

@@ -1,6 +1,6 @@
 "use client"
 import {  Heading, Text, Center, Link, HStack, Icon, Container } from '@chakra-ui/react'
-
+import { RevealList, RevealWrapper } from 'next-reveal'
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <>
 
       <Container maxW={{lg:"1250px", md:"auto"}} px={{lg:"80px",md:"40px",base:"7px"}}>
+      <RevealList interval={60} delay={200} origin="top" reset={true} distance="100px">
       <Heading textAlign={"center"} mt="120px" fontSize={"45px"}>
       Network Programmability and Automation Specialization
       </Heading>
@@ -20,11 +21,13 @@ export default function Home() {
       <Text mt="10px" textAlign={"center"}>Duration: 13 Weeks</Text>
       <Text mt="10px" fontSize={"20px"} fontWeight="640" textAlign={"center"}>Course Description:</Text>
       <Text mt="10px" textAlign={"center"}>This course will focus on learning the basics of the networking and preparing for the new Cisco Certified Network Associate (CCNA) exam. This comprehensive course focuses on the solutions and technologies needed to implement and administer a broad range of modern networking and IT infrastructure.</Text>
+      </RevealList>
      </Container>
-     <Center mt="10px">
+     <Center mt="10px" mb="120px">
       <HStack>
-        
+      <RevealWrapper reset={true} origin="left">
      <Link href='https://www.amazon.com/CCNA-200-301-Official-Guide-Library/dp/1587147149/ref=sr_1_1' target="_blank">Textbook Link</Link>
+     </RevealWrapper>
      </HStack>
      </Center>
 </>

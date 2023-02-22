@@ -1,22 +1,25 @@
 "use client"
 import { Heading, Text, Box, Center, Flex, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-
+import { RevealList, RevealWrapper } from 'next-reveal'
 
 export default function Home() {
   return (
 
       <>
       <Container maxW={{lg:"1250px", md:"auto"}} px={{lg:"80px",md:"40px",base:"20px"}}>
+        <RevealList interval={60} delay={200} origin="top" reset={true} distance="100px">
       <Heading textAlign={"center"} mt="120px" fontSize={"45px"}>Web 3 and Metaverse Specialization</Heading>
       <Heading mt="20px" textAlign={"center"}>Quarter 5</Heading>
       <Text mt="20px" fontSize={"20px"} fontWeight="640" textAlign={"center"}>MV-361: Developing Planet-Scale Open Virtual and Augmented Metaverse Experiences</Text>
       <Text mt="10px" textAlign={"center"}>Duration: 13 Weeks</Text><Text mt="10px" fontSize={"20px"} fontWeight="640" textAlign={"center"}>Course Description:</Text>
       <Text mt="10px"  textAlign={"center"}>The Web is the Metaverse. The metaverse requires an infrastructure that connects all of the metaverses so that we can travel between them. This is only achievable with open web-based metaverses. The internet and its browsers are magical. Federated but linked experiences connect pages, people, technology, businesses, standards, and nations. It's unlike anything else. The metaverse should replicate the best qualities of the web - it should just be the web. We just have to extend online responsive design from mobile to desktop to 3D, Augmented Reality, and Virtual Reality. This course will teach you how to build the Open Social Spatial Web with WebXR and WebGPU technologies.</Text>
       <Text mt="20px" textAlign={"center"} fontSize={"20px"} fontWeight="640">Course Outline:</Text>
+      </RevealList>
       </Container>
       
-      <Center mt="15px">
-      <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+      <Center mt="10px">
+      <RevealWrapper reset={true} origin="left">
+      <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
         <VStack align={"start"} p="20px">
           <Text fontSize={"18px"} fontWeight="640">Open Metaverse Web Development</Text>
           <HStack>
@@ -25,9 +28,11 @@ export default function Home() {
           </HStack>
         </VStack>
       </Box>
+      </RevealWrapper>
     </Center>
     <Center mt="20px">
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+    <RevealWrapper reset={true} origin="right" distance='15px'>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px">
             <Text fontSize={"18px"} fontWeight="640">Blender 3D asset Creation for the Metaverse (Remote Zoom Class)</Text>
             <Text>Blender development is being funded by heavyweights in the real-time 3D (RT3D) space such as Apple, Unity, AMD, Intel, Meta, NVIDIA, AWS, Epic Games, Adobe, Microsoft, and Decentraland. It is expected to become the standard asset creation tool for metaverse.</Text>
@@ -57,10 +62,12 @@ export default function Home() {
             </HStack>
           </VStack>
         </Box>
+        </RevealWrapper>
       </Center>
       <Center mt="20px">
         <Flex gap={"20px"} direction={{lg:"row", md:"column", base:"column"}} align={{base:"center",lg:"initial"}}>
-          <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        <RevealWrapper reset={true} origin="left">
+          <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h="123px" borderRadius={"12px"}>
             <VStack align={"start"} p="20px">
               <Text fontSize={"18px"} fontWeight="640">Assignment 1:</Text>
               <HStack>
@@ -69,7 +76,9 @@ export default function Home() {
               </HStack>
             </VStack>
           </Box>
-          <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+          </RevealWrapper>
+          <RevealWrapper reset={true} origin="right" distance='15px'>
+          <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"147px",md:"123px",lg:"123px"}} borderRadius={"12px"}>
             <VStack align={"start"} p="20px">
               <Text fontSize={"18px"} fontWeight="640">Assignment 2:</Text>
               <HStack>
@@ -78,11 +87,13 @@ export default function Home() {
               </HStack>
             </VStack>
           </Box>
+          </RevealWrapper>
         </Flex>
       </Center>
       <Center mt="20px">
         <Flex gap={"20px"} direction={{lg:"row", md:"column", base:"column"}} align={{base:"center",lg:"initial"}}>
-          <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        <RevealWrapper reset={true} origin="left">
+          <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"171px",md:"123px",lg:"123px"}} borderRadius={"12px"}>
             <VStack align={"start"} p="20px">
               <Text fontSize={"18px"} fontWeight="640">Assignment 3:</Text>
               <HStack>
@@ -91,7 +102,9 @@ export default function Home() {
               </HStack>
             </VStack>
           </Box>
-          <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+          </RevealWrapper>
+          <RevealWrapper reset={true} origin="right" distance='15px'>
+          <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"147px",md:"123px",lg:"123px"}} borderRadius={"12px"}>
             <VStack align={"start"} p="20px">
               <Text fontSize={"18px"} fontWeight="640">Assignment 4:</Text>
               <HStack>
@@ -100,11 +113,13 @@ export default function Home() {
               </HStack>
             </VStack>
           </Box>
+          </RevealWrapper>
         </Flex>
       </Center>
-      <Center mt="20px">
+      <Center mt="20px" mb="120px">
         <Flex gap={"20px"} direction={{lg:"row", md:"column", base:"column"}} align={{base:"center",lg:"initial"}}>
-          <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        <RevealWrapper reset={true} origin="left">
+          <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"147px",md:"123px",lg:"123px"}} borderRadius={"12px"}>
             <VStack align={"start"} p="20px">
               <Text fontSize={"18px"} fontWeight="640">Assignment 5:</Text>
               <HStack>
@@ -113,7 +128,9 @@ export default function Home() {
               </HStack>
             </VStack>
           </Box>
-          <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+          </RevealWrapper>
+          <RevealWrapper reset={true} origin="right" distance='15px'>
+          <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"147px",md:"123px",lg:"123px"}} borderRadius={"12px"}>
             <VStack align={"start"} p="20px">
               <Text fontSize={"18px"} fontWeight="640">Assignment 6:</Text>
               <HStack>
@@ -122,6 +139,7 @@ export default function Home() {
               </HStack>
             </VStack>
           </Box>
+          </RevealWrapper>
         </Flex>
       </Center>
       </>

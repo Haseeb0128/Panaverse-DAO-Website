@@ -1,12 +1,13 @@
 "use client"
 import {  Heading, Text, Box, Center, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-
+import { RevealList, RevealWrapper } from 'next-reveal'
 
 export default function Home() {
   return (
     
       <>
       <Container maxW={{lg:"1250px", md:"auto"}} px={{lg:"80px",md:"40px",base:"20px"}}>
+      <RevealList interval={60} delay={200} origin="top" reset={true} distance="100px">
       <Heading textAlign={"center"} mt="120px" fontSize={"45px"} >
         Artificial Intelligence (AI) and Deep Learning Specialization
       </Heading>
@@ -20,11 +21,13 @@ export default function Home() {
       <Text mt="10px" fontSize={"20px"} fontWeight="640" textAlign={"center"}>Course Description:</Text>
       <Text mt="10px" textAlign={"center"}>This course will help you understand the capabilities, challenges, and consequences of deep learning and prepare you to participate in the development of leading-edge AI technology. We will finish the program by learning how to envision, create, and maintain integrated systems that run constantly in production. Production systems must manage constantly changing data, in stark contrast to typical machine learning modeling. The production system must also operate continuously at the lowest possible cost while delivering the highest possible performance.</Text>
       <Text mt="20px" textAlign={"center"} fontSize={"20px"} fontWeight="640">Course Outline:</Text>
+      </RevealList>
       </Container>
 
-      <Center mt="15px">
-        <VStack gap="15px">
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+      <Center mt="10px" mb="120px">
+        <VStack gap="10px">
+        <RevealWrapper origin='left' reset={true}>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"128px", md:"104px", lg:"104px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Deep Learning with Tensorflow</Text>
             <HStack>
@@ -33,7 +36,9 @@ export default function Home() {
             </HStack>
           </VStack>
         </Box>
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        </RevealWrapper>
+        <RevealWrapper origin='left' reset={true}>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"238px", md:"187px", lg:"187px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Machine Learning Engineering for Production (MLOps) using Terraform for CDK</Text>
             <HStack>
@@ -46,6 +51,7 @@ export default function Home() {
             </HStack>
           </VStack>
         </Box>
+        </RevealWrapper>
         </VStack>
     </Center>
     </>

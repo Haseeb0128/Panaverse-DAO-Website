@@ -1,8 +1,8 @@
 "use client"
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { Flex, Button, Box, Text, IconButton, Menu, MenuButton, MenuItem, MenuList, Stack} from '@chakra-ui/react'
+import { Flex, Button, Box, Text, IconButton, Menu, MenuButton, MenuItem, MenuList, Stack } from '@chakra-ui/react'
 import Link from 'next/link'
-import Image from 'next/image'
+ import Image from 'next/image'
 
 
 export default function Navbar() {
@@ -12,12 +12,12 @@ export default function Navbar() {
 
       <Flex flex={{base:1}} justify={{base:"start", md:"start", lg:"start"}}>
         <Link href={'/'}>
-        <Image src={'/images/plogo.png'} alt={'panaverselogo'} width={120} height={70}></Image>
+        <Image src={'/images/plogo.png'} alt={'panaverselogo'} width={120} height={70} />
         </Link>
         <Flex display={{base:"none", md:"flex", lg:"flex"}} ml={10} alignItems="center" flex={{lg:1,md:0,base:0}}>
-          <Link href={'/Courses'}><Text px={4} fontWeight="550">Courses</Text></Link>
-          <Link href={'/Leaders'}><Text px={4} fontWeight="550">Leaders</Text></Link>
-          <Link href={'/About'}><Text px={4} fontWeight="550">About</Text></Link>
+          <Link href={'/Courses'}><Text _hover={{ color: "gray.100" }} px={4} fontWeight="550">Courses</Text></Link>
+          <Link href={'/Leaders'}><Text _hover={{ color: "gray.100" }} px={4} fontWeight="550">Leaders</Text></Link>
+          <Link href={'/About'}><Text _hover={{ color: "gray.100" }} px={4} fontWeight="550">About</Text></Link>
         </Flex>
         <Stack m="auto" flex={{base:0, md:1}} justify="flex-end" direction={"row"}>
           <Link href={'https://portal.piaic.org/'} target="_blank"><Button size={"lg"} bg="#EB2323"color={"white"}

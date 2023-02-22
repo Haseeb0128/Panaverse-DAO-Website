@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <Box bg="#7B7A7A" mt="120px">
+    <Box bg="#7B7A7A">
         <Container maxW={1450}>
             <SimpleGrid templateColumns={{base:'repeat(1, 1fr)', md:'repeat(2, 1fr)' ,lg:'repeat(5, 1fr)'}} gap="20px">
                 <Box py="30px" w={{lg:"400px"}}  textAlign={{lg:"left", md:"center",base:"center"}} px={{lg:"20px", md:"none", base:"none"}}>
@@ -16,19 +16,19 @@ export default function Footer() {
                 <Box pt="70px"  textAlign={{lg:"left", md:"center",base:"center"}} px={{lg:"20px", md:"none", base:"none"}}>
                     <Text fontSize={"25px"} fontWeight="650" mb="20px">Company</Text>
                     <Grid>
-                    <Link href={'/'}><Text>About Us</Text></Link>
-                    <Link href={'/'}><Text>Blog</Text></Link>
-                    <Link href={'/'}><Text>Instructors</Text></Link>
-                    <Link href={'/'}><Text>Testimonials</Text></Link>
+                    <Link href={'/'}><Text _hover={{ color: "gray.100" }}>About Us</Text></Link>
+                    <Link href={'/'}><Text _hover={{ color: "gray.100" }}>Blog</Text></Link>
+                    <Link href={'/'}><Text _hover={{ color: "gray.100" }}>Instructors</Text></Link>
+                    <Link href={'/'}><Text _hover={{ color: "gray.100" }}>Testimonials</Text></Link>
                     </Grid>
                 </Box>
                 <Box pt="70px"  textAlign={{lg:"left", md:"center",base:"center"}} px={{lg:"20px", md:"none", base:"none"}}>
                 <Text fontSize={"25px"} fontWeight="650" mb="20px">Support</Text>
                     <Grid>
-                    <Link href={'/'}><Text>Help Center</Text></Link>
-                    <Link href={'/'}><Text>Terms of Service</Text></Link>
-                    <Link href={'/'}><Text>Legal</Text></Link>
-                    <Link href={'/'}><Text>Privacy</Text></Link>
+                    <Link href={'/'}><Text _hover={{ color: "gray.100" }}>Help Center</Text></Link>
+                    <Link href={'/'}><Text _hover={{ color: "gray.100" }}>Terms of Service</Text></Link>
+                    <Link href={'/'}><Text _hover={{ color: "gray.100" }}>Legal</Text></Link>
+                    <Link href={'/'}><Text _hover={{ color: "gray.100" }}>Privacy</Text></Link>
                     </Grid>
                 </Box>
                 <Box pt="70px" textAlign={{lg:"left", md:"center",base:"center"}} px={{lg:"20px", md:"none", base:"none"}}>

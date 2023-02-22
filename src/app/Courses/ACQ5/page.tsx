@@ -1,6 +1,6 @@
 "use client"
 import {  Heading, Text, Box, Center, Flex, VStack, HStack, Icon, Link, Container } from '@chakra-ui/react'
-
+import { RevealList, RevealWrapper } from 'next-reveal'
 
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <>
 
       <Container maxW={{lg:"1250px", md:"auto"}} px={{lg:"80px",md:"40px",base:"20px"}}>
+        <RevealList interval={60} delay={200} origin="top" reset={true} distance="100px">
       <Heading textAlign={"center"} mt="120px" fontSize={"45px"}>
       Ambient Computing and IOT Specialization
       </Heading>
@@ -22,12 +23,14 @@ export default function Home() {
       <Text mt="10px" fontSize={"20px"} fontWeight="640" textAlign={"center"}>Course Description:</Text>
       <Text mt="10px" textAlign={"center"}>This is an introductory course about using the C and Rust Programming Languages on "Bare Metal" embedded systems, such as Microcontrollers. We will start by introducing embedded systems and move on to learn the  C++ and Rust programming languages. We'll learn about basic programming concepts using C and Rust, then we will explore key concepts in electronics, microcontrollers, and embedded programming. It is a fast-paced,  thorough introduction to programming with C and Rust that will have you writing programs, solving problems, burning your code on microcontrollers,  playing with GPIOs, and making things that work in no time.</Text>
       <Text mt="20px" textAlign={"center"} fontSize={"20px"} fontWeight="640">Course Outline:</Text>
+      </RevealList>
       </Container>
 
-      <Center mt="15px">
+      <Center mt="10px">
         <Flex gap="20px" direction={{md:"column", base:"column",lg:"row"}} align={{base:"center",lg:"initial"}}>
-        <VStack gap="15px">
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        <VStack gap="10px">
+          <RevealWrapper reset={true} origin="left">
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"686px", md:"563px", lg:"563px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Introduction to the Internet of Things and Embedded Systems (Weeks 1 and 2)</Text>
             <HStack>
@@ -48,7 +51,9 @@ export default function Home() {
             <Text>Total Questions: 46, Total Time: 60 minutes</Text>
           </VStack>
         </Box>
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        </RevealWrapper>
+        <RevealWrapper reset={true} origin="left">
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"185px", md:"158px", lg:"158px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">The C Reference Book: The C programming language Embedded Programming book: Internet of things with ESP8266</Text>
             <HStack>
@@ -57,9 +62,11 @@ export default function Home() {
             </HStack>
           </VStack>
         </Box>
+        </RevealWrapper>
         </VStack>
-        <VStack gap="15px">
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        <VStack gap="10px">
+        <RevealWrapper reset={true} origin="right" distance='15px'>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"523px", md:"424px", lg:"424px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Introduction to C Part 1 (Weeks 3B, 4, and 5)</Text>
             <Text>C environment Setup for (Windows, Linux, and Mac OS systems)</Text>
@@ -99,7 +106,9 @@ export default function Home() {
             <Text>Programming Assignments will also be given.</Text>
           </VStack>
         </Box>
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        </RevealWrapper>
+        <RevealWrapper reset={true} origin="right" distance='15px'>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"347px", md:"224px", lg:"296px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">C Programming Part 2 (Weeks 6 and 7)</Text>
             <Text>Topics 3 and 4  of  “The C programming language”</Text>
@@ -108,19 +117,20 @@ export default function Home() {
               <Text>Control flow statements (else if, loops, switch, break continue)</Text>
             </HStack>
             <HStack>
-              
               <Text>Function and Program structure(Returning and non-returning, scope rules, Recursion)</Text>
             </HStack>
             <Text>Programming Assignments will also be given.</Text>
           </VStack>
         </Box>
+        </RevealWrapper>
         </VStack>
         </Flex>
         </Center>
-        <Center mt="20px">
+        <Center mt="20px" mb="120px">
         <Flex gap="20px" direction={{md:"column", base:"column",lg:"row"}} align={{base:"center",lg:"initial"}}>
-          <VStack gap="15px">
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        <VStack gap="10px">
+        <RevealWrapper reset={true} origin="left">
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"467px", md:"296px", lg:"296px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Introduction to Embedded systems Part 1 (Weeks 8)</Text>
             <Text>Basic Electronics and Introduction to microcontrollers</Text>
@@ -138,7 +148,9 @@ export default function Home() {
             <Text>Total Questions: 62, Total Time: 75 minutes</Text>
           </VStack>
         </Box>
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        </RevealWrapper>
+        <RevealWrapper reset={true} origin="left">
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"563px", md:"488px", lg:"490px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Introduction to Embedded systems Part 2 (Weeks 9-12)</Text>
             <Text>Chapters 2-5 of  “Internet of things with ESP8266”</Text>
@@ -192,9 +204,11 @@ export default function Home() {
             </HStack>
           </VStack>
         </Box>
+        </RevealWrapper>
         </VStack>
-        <VStack gap="15px">
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        <VStack gap="10px">
+        <RevealWrapper reset={true} origin="right" distance='15px'>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h="163px" borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Embedded Programming using Rust (Extra Weeks in the Course)</Text>
             <HStack>
@@ -207,7 +221,9 @@ export default function Home() {
             </HStack>
           </VStack>
         </Box>
-        <Box bg="#50E09F" w={{lg:"500px",md:"500px", base:"320px"}} borderRadius={"12px"}>
+        </RevealWrapper>
+        <RevealWrapper reset={true} origin="right" distance='15px'>
+        <Box bg="#CECCCC" w={{lg:"500px",md:"500px", base:"320px"}} h={{base:"256px", md:"232px", lg:"232px"}} borderRadius={"12px"}>
           <VStack align={"start"} p="20px" mt="5px">
             <Text fontSize={"18px"} fontWeight="640">Hardware Requirements</Text>
             <Text>Esp8266 (Node MCU)</Text>
@@ -217,6 +233,7 @@ export default function Home() {
             <Text>Sensors: (Dht11, ultrasonic sensor, IR sensor)</Text>
           </VStack>
         </Box>
+        </RevealWrapper>
         </VStack>
         </Flex>
 </Center>
